@@ -5,6 +5,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -59,6 +60,7 @@ footer h2 {
   padding-top: 20px;
   font-family: "Shrikhand", sans-serif;
   font-size: 18px;
+  font-weight: 300;
 }
 footer .fas {
   padding-right: 10px;
@@ -151,10 +153,12 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 6px 8px 10px 0px #616060;
 }
-.reservationsection .reservationsection-btn a {
-  color: white;
-  font-family: "Roboto", sans-serif;
+.reservationsection .reservationsection-btn:hover {
+  background: linear-gradient(to bottom right, #ff87dd, #af6ffd);
+  font-weight: bold;
+  box-shadow: 6px 8px 17px 0px #3f3f3f;
 }
 
 .fonctionnementsection {
@@ -246,10 +250,13 @@ body a {
 
 .restaurantssection {
   background-color: #f8f8f8;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
 }
 .restaurantssection h2 {
   padding-top: 30px;
-  margin-left: 15px;
+  margin-left: 20px;
   font-family: "Roboto", sans-serif;
 }
 .restaurantssection .menu1et2,
@@ -344,18 +351,15 @@ width: 30%;
 position: relative;
 }
 
-  .restaurantssection {
-flex-wrap: wrap;
-display: flex;
-justify-content: center;
-align-items: center;
-}
   .restaurantssection h2 {
 width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 }
+  .restaurantssection{
+justify-content: center;
+  }
   .restaurantssection .menu1et2,
   .restaurantssection .menu3et4 {
 background-color: white;
