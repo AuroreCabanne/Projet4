@@ -46,6 +46,7 @@ footer li a {
 body {
   margin: 0px;
   position: relative;
+  font-family: roboto, sans-serif;
 }
 body a {
   text-decoration: none;
@@ -102,7 +103,7 @@ main .main-titre-coeur {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 main .main-titre-coeur h1 {
   font-size: 24px;
@@ -135,6 +136,7 @@ main .section-dessert h2 {
   margin-bottom: 0px;
   margin-top: 0px;
   border-bottom: 2px solid #99e2d0;
+  font-weight: lighter;
 }
 main .section-entree h4,
 main .section-plat h4,
@@ -286,9 +288,12 @@ main .button {
   margin-top: 10px;
   display: flex;
   align-items: center;
+  box-shadow: 6px 8px 10px 0px #616060;
 }
-main .button a {
-  color: white;
+main .button:hover {
+  background: linear-gradient(to bottom right, #ff87dd, #af6ffd);
+  font-weight: bold;
+  box-shadow: 6px 8px 17px 0px #3f3f3f;
 }
 
 @media screen and (min-width: 1024px) {
@@ -302,8 +307,17 @@ main .button a {
     object-fit: cover;
   }
 
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 280px;
+    right: 10%;
+    width: 80%;
+  }
+
   main .main-titre-coeur {
-    width: 100%;
+    width: 600px;
     align-items: center;
     justify-content: center;
   }
@@ -328,14 +342,12 @@ main .section-dessert {
   main .section-entree h2,
 main .section-plat h2,
 main .section-dessert h2 {
-    width: 10%;
     margin-bottom: 0px;
     margin-top: 0px;
     border-bottom: 2px solid #99e2d0;
-    width: 100%;
+    width: 55%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
   }
   main .section-entree h4,
 main .section-plat h4,
@@ -350,7 +362,7 @@ main .section-dessert h4 {
   main .section-entree .menu-content,
 main .section-plat .menu-content,
 main .section-dessert .menu-content {
-    width: 50%;
+    width: 600px;
   }
   main .section-entree .entree,
 main .section-entree .plat,
@@ -400,6 +412,7 @@ main .section-dessert .dessert .prix {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   main footer h3 {
     margin-left: 0px;
@@ -409,6 +422,7 @@ main .section-dessert .dessert .prix {
     margin-left: 0px;
   }
 }
+
 @media screen and (min-width: 500px) and (max-width: 1023px) {
   body {
     position: relative;
