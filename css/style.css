@@ -332,11 +332,10 @@ body a {
 flex-direction: column;
 display: flex;
 justify-content: center;
-align-items: center;
 }
   .fonctionnementsection h1 {
 margin-left: 20px;
-padding-top: 30px;
+padding: 30px;
 font-family: "Roboto", sans-serif;
 }
   .fonctionnementsection .fonctionnementsection-div {
@@ -350,12 +349,17 @@ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 width: 30%;
 position: relative;
 }
+.fonctionnementsection .fonctionnementsection-3-div {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
 
   .restaurantssection h2 {
 width: 100%;
 display: flex;
-justify-content: center;
 align-items: center;
+padding: 30px;
 }
   .restaurantssection{
 justify-content: center;
@@ -363,8 +367,8 @@ justify-content: center;
   .restaurantssection .menu1et2,
   .restaurantssection .menu3et4 {
 background-color: white;
-width: 400px;
-height: 400px;
+width: 350px;
+height: 350px;
 margin-bottom: 30px;
 margin-left: 40px;
 }
@@ -373,16 +377,15 @@ margin-left: 40px;
 width: 100%;
 height: auto;
 border-radius: 20px 20px 0 0;
--o-object-fit: cover;
-   object-fit: cover;
+object-fit: cover;
 }
   .restaurantssection .menu1et2 .image2,
   .restaurantssection .menu3et4 .image2 {
-width: 400px;
-height: 270px;
+width: 350px;
+height: 235px;
 }
   footer {
-flex-direction: row;
+flex-direction: row-reverse;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -391,33 +394,33 @@ align-items: center;
 margin-left: 0px;
 font-size: 34px;
 }
+  footer ul {
+    display: flex;
+  }
   footer li {
+padding: 3em;
+margin: 3em
+object-fit cover;
+}
+  .restaurantssection .menu1et2 .image2,
+  .restaurantssection .menu3et4 .image2 {
+width: 350px;
+height: 235px;
+}
+  footer {
+flex-direction: row-reverse;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  footer h2 {
 margin-left: 0px;
+font-size: 34px;
 }
 }
 
 @media screen and (min-width: 500px) and (max-width: 1023px) {
-  .restaurantssection {
-flex-wrap: wrap;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-  .restaurantssection h2 {
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-  .restaurantssection .menu1et2,
-  .restaurantssection .menu3et4 {
-background-color: white;
-width: 500px;
-height: 350px;
-margin-bottom: 30px;
-margin-left: 40px;
-}
-  .restaurantssection .menu1et2 img,
+
   .restaurantssection .menu3et4 img {
 width: 100%;
 height: 256.7px;
