@@ -351,6 +351,7 @@ align-items: center;
 padding: 30px;
 }
   .restaurantssection{
+display: flex;
 justify-content: center;
 flex-direction: row;
   }
