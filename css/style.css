@@ -244,8 +244,6 @@ body a {
 .restaurantssection {
   background-color: #f8f8f8;
   flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
 }
 .restaurantssection h2 {
   padding-top: 30px;
