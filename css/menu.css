@@ -148,6 +148,11 @@ main .section-dessert h4 {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.description {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 main .section-entree .menu-content,
 main .section-plat .menu-content,
 main .section-dessert .menu-content {
@@ -158,9 +163,6 @@ main .section-dessert .menu-content {
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 main .section-entree .menu-content {
   animation: apparition 1s;
@@ -203,7 +205,6 @@ main .section-dessert .cross {
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  width: 50px;
   height: 23px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -237,8 +238,7 @@ main .section-dessert .entree,
 main .section-dessert .plat,
 main .section-dessert .dessert {
   display: flex;
-  flex-direction: row;
-  position: relative;
+  justify-content: space-between;
 }
 main .section-entree .entree p,
 main .section-entree .plat p,
@@ -265,7 +265,6 @@ main .section-dessert .dessert .prix {
   align-items: center;
   justify-content: center;
   padding-left: 20px;
-  position: absolute;
   right: 20px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;

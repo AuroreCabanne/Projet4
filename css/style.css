@@ -86,8 +86,6 @@ header p {
   font-size: 22px;
   margin: 0px;
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +93,7 @@ header p {
 
 body {
   margin: 0px;
+  font-family: "Roboto", sans-serif;
 }
 body a {
   text-decoration: none;
@@ -105,8 +104,6 @@ body a {
   flex-direction: row;
   background-color: #f0f0f0;
   margin-top: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,8 +116,6 @@ body a {
   margin: 0;
   background-color: #f8f8f8;
   flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,8 +128,6 @@ body a {
   font-family: "Roboto", sans-serif;
 }
 .reservationsection p {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -252,7 +245,7 @@ body a {
   background-color: #f8f8f8;
   flex-wrap: wrap;
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 .restaurantssection h2 {
   padding-top: 30px;
@@ -294,8 +287,6 @@ body a {
 .restaurantssection .menu1et2 .menu3et4-div,
 .restaurantssection .menu3et4 .menu1et2-div,
 .restaurantssection .menu3et4 .menu3et4-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .restaurantssection .menu1et2 .menu1et2-nouveau,
@@ -363,6 +354,7 @@ padding: 30px;
 }
   .restaurantssection{
 justify-content: center;
+flex-direction: row;
   }
   .restaurantssection .menu1et2,
   .restaurantssection .menu3et4 {
@@ -395,12 +387,12 @@ margin-left: 0px;
 font-size: 34px;
 }
   footer ul {
-    display: flex;
-  }
+display: flex;
+}
   footer li {
 padding: 3em;
-margin: 3em
-object-fit cover;
+margin: 3em;
+object-fit: cover;
 }
   .restaurantssection .menu1et2 .image2,
   .restaurantssection .menu3et4 .image2 {
