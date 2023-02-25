@@ -331,7 +331,6 @@ main .button:hover {
     flex-direction: column;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   main .section-entree,
 main .section-plat,
